@@ -28,10 +28,11 @@ export default {
     }),
 };
 
+// Example of how to render Hello:
 const Apple = () => {
     return(
         <h1>Hello</h1>
     )
 };
 
-ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(<App /* to render hello: <Apple */ />, document.querySelector('#root'));
