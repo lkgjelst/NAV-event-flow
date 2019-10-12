@@ -15,8 +15,9 @@ const ResponsiveVis = withScreenSize(({ screenWidth, screenHeight, ...rest }) =>
 const EventFlowExample= () => {
     return(
         <div className={'content'}>
-            <h1>Event-flow example: twenty users</h1>
-            <ResponsiveVis data={twentyUsers.twentyUsers.allEvents} />
+            <h1>Event-flow example: 20/100/lots of users</h1>
+            // use: to get n users:   twentyUsers.nUsers.allEvents. See SampleEventGenerator for different numbers :D
+            <ResponsiveVis data={twentyUsers.hundredUsers.allEvents} />
         </div>
     )
 };
