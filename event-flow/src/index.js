@@ -3,8 +3,9 @@ import React from 'react';
 import { withScreenSize } from '@vx/responsive';
 import ReactDOM from 'react-dom';
 import { App } from '@data-ui/event-flow';
-import sampleEvents from '@data-ui/event-flow/build/sampleEvents';
+import twentyUsers from './SampleEventGenerator'
 
+console.log(twentyUsers.twentyUsers.allEvents);
 
 const ResponsiveVis = withScreenSize(({ screenWidth, screenHeight, ...rest }) => (
     <App width={screenWidth * 0.9} height={screenHeight * 0.9} {...rest} />
@@ -15,7 +16,7 @@ const EventFlowExample= () => {
     return(
         <div className={'content'}>
             <h1>Event-flow example: twenty users</h1>
-            <ResponsiveVis data={sampleEvents['twentyUsers'].allEvents} />
+            <ResponsiveVis data={twentyUsers.twentyUsers.allEvents} />
         </div>
     )
 };
